@@ -7,6 +7,10 @@
   <%= f.text_field :price %><br>
   <%= f.label :bedrooms %>
   <%= f.text_field :bedrooms %><br>
-  <%= f.hidden_field(:user_id, :value => "#{current_user.id}") %>
+  <%= collection_select @region, :country_id, Country.order(:name), :id, :name, include_blank: true %>
+  <%= grouped_collection_select @city, :region_id, Country.order(:name), :regions, :name, :id, :name, include_blank: true %>
+  <%= grouped_collection_select @neighborhood, :city_id, Region.order(:name), :cities, :name, :id, :name, include_blank: true %>
+  <%= f.grouped_collection_select :neighborhood_id, City.order(:name), :neighborhoods, :name, :id, :name, include_blank: true %>
+  <%= f.hidden_field(:user_id, :value => "#{current_user.id}") %><br>
   <%= f.submit 'create' %>
 <% end %>

@@ -48,7 +48,7 @@ class NeighborhoodsController < ApplicationController
   private
 
   def strong
-    params.require(:neighborhood).permit(:name)
+    params.require(:neighborhood).permit(:name, :city_id)
   end
 
 end

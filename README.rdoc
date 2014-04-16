@@ -12,3 +12,5 @@ AirBnB clone
 
 * As a user I want to be able to book a room for a specified date range
 
+* as a user I want to upload photos of my room for rent
+
