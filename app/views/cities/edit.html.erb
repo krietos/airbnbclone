@@ -1,0 +1,8 @@
+<h1>edit city</h1>
+
+<%= form_for @city, url: {action: 'update'} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.select(:region_id, @regions_array) %>
+  <%= f.submit 'edit' %>
+<% end %>

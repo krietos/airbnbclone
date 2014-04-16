@@ -43,7 +43,7 @@ class RoomsController < ApplicationController
   private
 
   def strong
-    params.require(:room).permit(:name, :price, :bedrooms)
+    params.require(:room).permit(:name, :price, :bedrooms, :user_id)
   end
 
 end

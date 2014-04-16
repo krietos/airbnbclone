@@ -1,0 +1,7 @@
+<h1>edit country</h1>
+
+<%= form_for @country, url: {action: 'update'} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.submit 'edit' %>
+<% end %>

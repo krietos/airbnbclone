@@ -1,0 +1,8 @@
+<h1>regions</h1>
+<ul>
+<% @regions.each do |region| %>
+  <li><%= link_to region.name, region_path(region.id) %></li>
+<% end %>
+</ul>
+
+<%= link_to 'create', new_region_path %>

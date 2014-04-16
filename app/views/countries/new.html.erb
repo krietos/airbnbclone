@@ -1,0 +1,7 @@
+<h1>New country</h1>
+
+<%= form_for @country, url: {action: 'create'} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.submit 'create' %>
+<% end %>

@@ -6,6 +6,8 @@ AirBnB clone
 
 * As a user I want to be able to put my room up for rent
 
+* As an admin I want to be able to creat countries, regions, cities, and neighbohoods for users to be able to select to list their rooms under
+
 * As a user I want to sort rooms by country, region, city, neighborhood to find the are I am looking for
 
 * As a user I want to be able to book a room for a specified date range

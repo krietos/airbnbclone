@@ -1,0 +1,8 @@
+<h1><%= @neighborhood.name %></h1>
+
+<%= link_to 'create', new_neighborhood_path %>
+<br>
+<%= link_to 'edit', edit_neighborhood_path %>
+<br>
+
+<%= button_to 'delete', {id: @neighborhood.id}, {method: :delete} %>

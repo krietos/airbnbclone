@@ -1,0 +1,8 @@
+<h1><%= @region.name %></h1>
+
+<%= link_to 'create', new_region_path %>
+<br>
+<%= link_to 'edit', edit_region_path %>
+<br>
+
+<%= button_to 'delete', {id: @region.id}, {method: :delete} %>

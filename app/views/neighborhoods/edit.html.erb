@@ -1,0 +1,8 @@
+<h1>edit neighborhood</h1>
+
+<%= form_for @neighborhood, url: {action: 'update'} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.select(:city_id, @cities_array) %>
+  <%= f.submit 'edit' %>
+<% end %>

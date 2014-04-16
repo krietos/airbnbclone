@@ -1,0 +1,8 @@
+<h1><%= @country.name %></h1>
+
+<%= link_to 'create', new_country_path %>
+<br>
+<%= link_to 'edit', edit_country_path %>
+<br>
+
+<%= button_to 'delete', {id: @country.id}, {method: :delete} %>
