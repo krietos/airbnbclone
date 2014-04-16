@@ -1,0 +1,11 @@
+<h1>edit room</h1>
+
+<%= form_for @room, url: {action: 'update'} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.label :price %>
+  <%= f.text_field :price %><br>
+  <%= f.label :bedrooms %>
+  <%= f.text_field :bedrooms %><br>
+  <%= f.submit 'create' %>
+<% end %>

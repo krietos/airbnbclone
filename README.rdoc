@@ -1,0 +1,12 @@
+AirBnB clone
+
+* As a user I want to be able to view all of the possible rooms for rent
+
+* As I user I want to be able to create an account
+
+* As a user I want to be able to put my room up for rent
+
+* As a user I want to sort rooms by country, region, city, neighborhood to find the are I am looking for
+
+* As a user I want to be able to book a room for a specified date range
+

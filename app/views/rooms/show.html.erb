@@ -1,0 +1,8 @@
+<h1><%= @room.name %></h1>
+
+<%= link_to 'create', new_room_path %>
+<br>
+<%= link_to 'edit', edit_room_path %>
+<br>
+
+<%= button_to 'delete', {id: @room.id}, {method: :delete} %>
